@@ -29,7 +29,7 @@ export default function App(): JSX.Element {
     async function getAnswer(expression: string) {
         const result = await evaluateExpression(expression) as Answer;
 
-        console.log(`Result of expression ${result}`)
+        console.log(`Result of expression ${result.result}`)
 
         setInputExpression("");
         setResultExpression(result.result);

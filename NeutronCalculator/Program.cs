@@ -22,7 +22,7 @@ internal class Program
 
         application.Bind("evaluateExpression", (id, parameters) =>
         {
-            Console.WriteLine($"Received {parameters}");
+            Console.WriteLine($"Received expression: {parameters[0].ToString()}");
 
             string? expression = parameters[0].ToString();
 
