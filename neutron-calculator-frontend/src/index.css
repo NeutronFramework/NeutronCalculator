@@ -1,0 +1,44 @@
+:root {
+    --darker-button-color: #323232;
+    --darker-button-hover-color: #363636;
+    --button-color: #3b3b3b;
+    --background-color: #202020;
+    --button-hover-color: #323232;
+    --button-pressed-color: #828282;
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--background-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+a, input {
+    all: unset;
+}
+
+p {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+html,body, #root {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    -webkit-user-drag: none;
+}

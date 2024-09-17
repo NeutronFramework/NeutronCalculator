@@ -1,0 +1,5 @@
+NeutronCalculator/bin
+NeutronCalculator/dist
+NeutronCalculator/.vs
+NeutronCalculator/obj
+neutron-calculator-frontend/node_modules

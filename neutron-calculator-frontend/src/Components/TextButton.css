@@ -1,0 +1,39 @@
+.text-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: default;
+    background-color: var(--button-color);
+}
+
+.darker-text-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: default;
+    background-color: var(--darker-button-color);
+}
+
+.text-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.darker-text-button:hover {
+    background-color: var(--darker-button-hover-color);
+}
+
+.text-button:active {
+    background-color: var(--button-pressed-color);
+}
+
+.darker-text-button:active {
+    background-color: var(--button-pressed-color);
+}
+
+.text-button-text {
+    color: white;
+    user-select: none;
+    text-align: center;
+}

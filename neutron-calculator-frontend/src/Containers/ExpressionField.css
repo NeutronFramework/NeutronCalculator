@@ -1,0 +1,24 @@
+.expression-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    height: 128px;
+    padding-right: 12px;
+}
+
+
+.expression-input {
+    color: gray;
+    font-size: 14px;
+    user-select: none;
+    cursor: default;
+    text-align: right;
+}
+
+.expression-result {
+    font-size: xx-large;
+    user-select: none;
+    cursor: default;
+    text-align: right;
+}

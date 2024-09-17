@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/imagebutton.tsx","./src/components/textbutton.tsx","./src/containers/calculatorgrid.tsx","./src/containers/expressionfield.tsx"],"version":"5.6.2"}

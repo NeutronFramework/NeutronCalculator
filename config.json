@@ -1,0 +1,6 @@
+{
+  "ProjectName": "NeutronCalculator",
+  "DotnetVersion": "net8",
+  "FrontendName": "neutron-calculator-frontend",
+  "BackendName": "NeutronCalculator"
+}
