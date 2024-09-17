@@ -22,6 +22,8 @@ internal class Program
 
         application.Bind("evaluateExpression", (id, parameters) =>
         {
+            Console.WriteLine($"Received {parameters}");
+
             string? expression = parameters[0].ToString();
 
             if (expression is null)
