@@ -1,5 +1,4 @@
 using Neutron.Scripts;
-
 using StringMath;
 
 namespace NeutronCalculator;
