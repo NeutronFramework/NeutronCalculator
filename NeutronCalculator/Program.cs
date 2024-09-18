@@ -19,10 +19,8 @@ internal class Program
 
         application.SetMinSize(width: 320, height: 512);
 
-        application.Bind<string, int, string>("evaluateExpression", (expression, number, str) =>
+        application.Bind<string>("evaluateExpression", (expression) =>
         {
-            Console.WriteLine($"Number: {number}");
-            Console.WriteLine($"String: {str}");
             Console.WriteLine($"Received expression: {expression}");
 
             if (expression is null)

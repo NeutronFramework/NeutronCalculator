@@ -15,7 +15,7 @@ import equalPath from "./assets/icons/equal.png";
 
 
 declare global {
-    let evaluateExpression: (expression: string, number: number, str: string) => Promise<string>; 
+    let evaluateExpression: (expression: string) => Promise<string>; 
 }
 
 export default function App(): JSX.Element {
@@ -23,7 +23,7 @@ export default function App(): JSX.Element {
     const [resultExpression, setResultExpression] = useState(" ");
 
     async function getAnswer(expression: string) {
-        let result: string = await evaluateExpression(expression, 10, "Hello");
+        let result: string = await evaluateExpression(expression);
 
         console.log(`Result of expression ${result}`)
 
