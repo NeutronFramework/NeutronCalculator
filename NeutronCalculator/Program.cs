@@ -1,5 +1,4 @@
 using Neutron.Scripts;
-using SharpWebview;
 
 using StringMath;
 
@@ -20,11 +19,11 @@ internal class Program
 
         application.SetMinSize(width: 320, height: 512);
 
-        application.Bind("evaluateExpression", (id, parameters) =>
+        application.Bind<string, int, string>("evaluateExpression", (expression, number, str) =>
         {
-            Console.WriteLine($"Received expression: {parameters[0].ToString()}");
-
-            string? expression = parameters[0].ToString();
+            Console.WriteLine($"Number: {number}");
+            Console.WriteLine($"String: {str}");
+            Console.WriteLine($"Received expression: {expression}");
 
             if (expression is null)
             {
@@ -42,12 +41,7 @@ internal class Program
                 expressionResult = "Error";
             }
 
-            Dictionary<string, object> returnObject = new()
-            {
-                ["result"] = expressionResult
-            };
-
-            application.Return(id, RPCResult.Success, returnObject);
+            return expressionResult;
         });
 
         application.Run();
