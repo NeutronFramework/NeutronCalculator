@@ -18,7 +18,7 @@ internal class Program
 
         application.SetMinSize(width: 320, height: 512);
 
-        application.Bind<string>("evaluateExpression", (expression) =>
+        application.Bind("evaluateExpression", (string expression) =>
         {
             Console.WriteLine($"Received expression: {expression}");
 
