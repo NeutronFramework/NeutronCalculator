@@ -23,7 +23,7 @@ export default function App(): JSX.Element {
     const [resultExpression, setResultExpression] = useState(" ");
 
     async function getAnswer(expression: string) {
-        let result: string = await evaluateExpression(expression);
+        const result: string = await evaluateExpression(expression);
 
         console.log(`Result of expression ${result}`)
 
