@@ -17,6 +17,7 @@ internal class Program
 #endif
 
         application.SetMinSize(width: 320, height: 512);
+        application.Center();
 
         application.Bind<string, string>("evaluateExpression", (expression) =>
         {

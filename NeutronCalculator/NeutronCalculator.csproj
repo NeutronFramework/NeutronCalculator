@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <PackageReference Include="StringMath" Version="4.1.2" />
-    <PackageReference Include="Neutron" Version="0.1.8" />
+    <PackageReference Include="Neutron" Version="*" />
   </ItemGroup>
 
   <Target Name="BuildFrontend">
