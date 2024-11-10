@@ -2,4 +2,5 @@ NeutronCalculator/bin
 NeutronCalculator/dist
 NeutronCalculator/.vs
 NeutronCalculator/obj
+.vs/
 neutron-calculator-frontend/node_modules
